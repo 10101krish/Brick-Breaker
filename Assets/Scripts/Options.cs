@@ -32,7 +32,6 @@ public class Options : MonoBehaviour
 
     public void SaveAndExit()
     {
-        Debug.Log(difficultySlider.value);
         currentMaxLives = ((int)difficultySlider.value);
         PlayerPrefsController.SetLivesCount(currentMaxLives);
         SceneManager.LoadScene("Main Menu");
